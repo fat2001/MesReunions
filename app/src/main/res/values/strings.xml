@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Application_Connexion</string>
+
+
+    <string-array name="numbers">
+        <item>selectionner votre service</item>
+        <item>DAI</item>
+        <item>RSU</item>
+        <item>RNP</item>
+        <item>DAS</item>
+        <item>DUE</item>
+    </string-array>
+</resources>
