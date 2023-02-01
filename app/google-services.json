@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "37934977601",
+    "project_id": "awtars-fb30a",
+    "storage_bucket": "awtars-fb30a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37934977601:android:52fca3a76587d84be0ecc0",
+        "android_client_info": {
+          "package_name": "com.example.application_connexion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37934977601-1heiv7iigea2v6bit5o5gp75p8l05v31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgFheAS-1YeDbUBi_pu64UNCfTMEEH4mU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37934977601-1heiv7iigea2v6bit5o5gp75p8l05v31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

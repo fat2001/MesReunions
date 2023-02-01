@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name" translatable="false">Application_Connexion</string>
+    <string name="profile_op">Profile</string>
+    <string name="freinds_op">freinds</string>
+    <string name="chats_op">chats</string>
+    <string name="others">Others</string>
+    <string name="settings_op">settings</string>
+    <string name="about_op">about</string>
+    <string name="logout_op">logout</string>
+    <string name="home_op">home</string>
+    <string name="activites_op">activités</string>
+    <string name="archive_op">archive</string>
 
 
     <string-array name="numbers">

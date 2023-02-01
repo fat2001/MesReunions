@@ -1,4 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/profile_op"
+    android:title="@string/profile_op"
+    android:icon="@drawable/ic_baseline_account_circle_24">
+
+</item>
+
+    <item android:id="@+id/home_op"
+        android:title="@string/home_op"
+        android:icon="@drawable/ic_baseline_home_24"
+        >
+
+    </item>
+
+    <item android:id="@+id/activites"
+        android:title="@string/activites_op"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        >
+
+    </item>
+
+    <item android:id="@+id/archive"
+        android:title="@string/archive_op"
+        android:icon="@drawable/ic_baseline_free_cancellation_24">
+
+    </item>
+
+    <item android:id="@+id/Others"
+        android:title="@string/others">
+<menu>
+    <item android:id="@+id/settings"
+        android:title="@string/settings_op"
+        android:icon="@drawable/ic_baseline_settings_24"
+        >
+
+    </item>
+
+    <item android:id="@+id/about_op"
+        android:title="@string/about_op">
+
+    </item>
+    <item android:id="@+id/logout_op"
+        android:title="@string/logout_op"
+        android:icon="@drawable/ic_baseline_logout_24">
+
+    </item>
+
+</menu>
+    </item>
 
 </menu>

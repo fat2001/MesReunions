@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSignup = findViewById(R.id.Sign_up);
-        login();
+        //login();
 
         getSignup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    void login() {
+   /* void login() {
         et_username = findViewById(R.id.et_username1);
         et_password = findViewById(R.id.et_password1);
         btn_login = findViewById(R.id.btn_login1);
@@ -52,5 +52,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
+    }*/
 }

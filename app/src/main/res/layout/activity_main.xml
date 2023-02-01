@@ -10,14 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="186dp"
-        android:background="@drawable/header"
+        android:background="@drawable/cqp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:text="Directeur"
             android:textColor="#fff"
             android:textSize="30dp"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Connecter pour contunue"
-            android:textColor="#fbc02d"
+            android:textColor="#090908"
             android:textSize="19dp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -37,7 +37,7 @@
         android:text="Login"
         android:textSize="35dp"
         android:textStyle="bold"
-        android:textColor="#ad16Bb"
+        android:textColor="#009688"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="35dp" />
 
@@ -90,7 +90,7 @@
         android:layout_marginRight="35dp"
         android:gravity="end"
         android:text="forget password ?"
-        android:textColor="#ad16Bb"
+        android:textColor="#009688"
 
         android:textSize="18dp"
         android:textStyle="bold"
@@ -116,7 +116,7 @@
         android:layout_marginLeft="70dp"
         android:layout_marginTop="20dp"
         android:text="Tu n'as pas de compte? Sign up"
-        android:textColor="#ad16Bb"
+        android:textColor="#009688"
         android:textSize="18dp"
         android:textStyle="bold" />
 

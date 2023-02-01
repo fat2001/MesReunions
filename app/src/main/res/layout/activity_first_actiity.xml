@@ -5,34 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/reunino1"
+
+    android:gravity="center"
+
     tools:context=".First_Actiity">
 
 
-    <TextView
-        android:layout_width="254dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="200dp"
-        android:text="Welcome"
-        android:textColor="#ad16Bb"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
 
-        android:textSize="35dp"
-        android:textStyle="bold" />
-
-
-
-
-
+        app:srcCompat="@drawable/logo" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_admin"
         android:layout_width="303dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="35dp"
+
         android:layout_marginTop="20dp"
-        android:layout_marginRight="35dp"
+
+        android:layout_gravity="center"
+
         android:background="@drawable/button"
         android:text="Directeur"
         android:textColor="#fff"
@@ -43,9 +38,9 @@
         android:id="@+id/btn_user"
         android:layout_width="303dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="35dp"
+
         android:layout_marginTop="20dp"
-        android:layout_marginRight="35dp"
+        android:layout_gravity="center"
         android:background="@drawable/button"
         android:text="Employe"
         android:textColor="#fff"
