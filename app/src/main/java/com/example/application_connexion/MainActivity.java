@@ -10,9 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
     EditText et_username, et_password;
-    Button btn_login;
+    Button btn_login1;
     TextView getSignup;
 
     @Override
@@ -20,7 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSignup = findViewById(R.id.Sign_up);
+        et_username = findViewById(R.id.et_username2);
+        et_password = findViewById(R.id.et_password2);
+        btn_login1 = (Button) findViewById(R.id.btn_login);
         //login();
+
 
         getSignup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,25 +37,21 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-    }
 
-   /* void login() {
-        et_username = findViewById(R.id.et_username1);
-        et_password = findViewById(R.id.et_password1);
-        btn_login = findViewById(R.id.btn_login1);
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
+        btn_login1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                if (et_username.getText().toString().equals("admin") && et_password.getText().toString().equals("admin")) {
-                    Toast.makeText(MainActivity.this, "Nom d'utilisateur et mot de passe corrects", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this,com.example.application_connexion.Admin.class);
+               if (et_username.getText().toString().equals("admin") && et_password.getText().toString().equals("admin")) {
+                    Intent intent = new Intent(MainActivity.this,adminacceuil.class);
 
                     startActivity(intent);
-                } else {
-                    Toast.makeText(MainActivity.this, "Nom d'utilisateur ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
+               } else {
+                   Toast.makeText(MainActivity.this, "Nom d'utilisateur ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-    }*/
+    }
+
+
 }

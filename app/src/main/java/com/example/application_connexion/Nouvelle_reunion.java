@@ -3,44 +3,35 @@ package com.example.application_connexion;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
-import  static android.Manifest.permission.CAMERA;
 
 
 import java.util.Calendar;
 
 public class Nouvelle_reunion extends AppCompatActivity  implements TimePickerDialog.OnTimeSetListener,DatePickerDialog.OnDateSetListener{
-private EditText edittextDate,editTextTime;
+private EditText edittextDate,editTextTime,sujet,lieu;
 private DatePickerDialog datePickerDialog;
 private TimePickerDialog mTimePickerDialog;
+private Spinner spinner,servise;
+
 
  Button btnprendre;
    Uri imageAffiche;
@@ -56,6 +47,7 @@ private TimePickerDialog mTimePickerDialog;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nouvelle_reunion);
+        sujet =(EditText) findViewById(R.id.sujet);
         ivphoto=findViewById(R.id.ivphoto);
 
         //photo
@@ -191,4 +183,16 @@ private TimePickerDialog mTimePickerDialog;
         String time=hourOfDay + ":" +minute;
         editTextTime.setText(time);
     }
-}
+    public void buttonsenderpresser(View v){
+        Intent senderintent = new Intent(this, adminacceuil.class);
+        senderintent.putExtra("KEY_SENDER",sujet.getText().toString());
+        senderintent.putExtra("date",edittextDate.getText().toString());
+        senderintent.putExtra("time",editTextTime.getText().toString());
+        senderintent.putExtra("lieu",lieu.getText().toString());
+        senderintent.putExtra("type",spinner.getSelectedItem().toString());
+        senderintent.putExtra("servise",servise.getSelectedItem().toString());
+
+
+        startActivity(senderintent);
+        }
+    }
